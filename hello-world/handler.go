@@ -1,5 +1,4 @@
 package function
-
 import (
 	"net/http"
 
@@ -9,7 +8,7 @@ import (
 // Handle is a function that always returns:  Hello world!
 func Handle(req handler.Request) (handler.Response, error) {
 	return handler.Response{
-		Body:       []byte("2019-02-24 18:52:20.46096902 +0000 UTC m=+6140.292368805"),
+		Body:       []byte("2019-02-24 23:40:26.13478395 +0000 UTC m=+8.331328566"),
 		StatusCode: http.StatusOK,
 	}, nil
 }
