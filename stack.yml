@@ -1,6 +1,5 @@
 provider:
   name: faas
-  gateway: http://openfaas.matiaspan.me:8080
 functions:
   hello-world:
     lang: golang-http
