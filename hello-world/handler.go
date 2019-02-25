@@ -9,7 +9,7 @@ import (
 // Handle is a function that always returns:  Hello world!
 func Handle(req handler.Request) (handler.Response, error) {
 	return handler.Response{
-		Body:       []byte("2019-02-25 00:18:52.843148647 +0000 UTC m=+11.213094523"),
+		Body:       []byte("2019-02-25 00:20:47.135316793 +0000 UTC m=+125.505262653"),
 		StatusCode: http.StatusOK,
 	}, nil
 }
