@@ -1,5 +1,5 @@
 provider:
-  name: faas
+  name: https://gateway.ofc.matiaspan.me
 functions:
   hello-world:
     lang: golang-http
