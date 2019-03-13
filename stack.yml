@@ -4,4 +4,4 @@ functions:
   hello-world:
     lang: golang-http
     handler: ./hello-world
-    image: matipan/hello-world:latest
+    image: hello-world-go
