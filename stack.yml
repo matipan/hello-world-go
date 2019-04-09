@@ -1,7 +1,8 @@
 provider:
   name: faas
+  gateway: https://gateway.ofc.matiaspan.me
 functions:
   hello-world:
     lang: golang-http
     handler: ./hello-world
-    image: hello-world-go
+    image: hello-world

@@ -1,15 +1,20 @@
 package function
 
 import (
+	"fmt"
 	"net/http"
 
-	handler "github.com/openfaas-incubator/go-function-sdk"
+	"github.com/openfaas-incubator/go-function-sdk"
 )
 
-// Handle is a function that always returns:  Hello world!
+// Handle a function invocation
 func Handle(req handler.Request) (handler.Response, error) {
+	var err error
+
+	message := fmt.Sprintf("Hello world, input was: %s", string(req.Body))
+
 	return handler.Response{
-		Body:       []byte("2019-03-26 20:49:38.101685546 +0000 UTC m=+267154.911118272"),
+		Body:       []byte(message),
 		StatusCode: http.StatusOK,
-	}, nil
+	}, err
 }
