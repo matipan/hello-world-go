@@ -8,9 +8,9 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/$PROJECT_ID/hello-world-go:$REVISION_ID', '-t', 'gcr.io/$PROJECT_ID/hello-world-go:latest', '-f' ,'./build/hello-world/Dockerfile', './build/hello-world/']
 
-## Deploy to "Cloud Run"
-#- name: 'gcr.io/cloud-builders/gcloud'
-#  args: ['beta', 'run', 'deploy', 'timezone-shift', '--image', 'gcr.io/$PROJECT_ID/timezone-shift:$REVISION_ID', '--region', 'us-central-1']
+# Deploy to "Cloud Run"
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['beta', 'run', 'deploy', 'hello-world-go', '--image', 'gcr.io/$PROJECT_ID/hello-world-go:$REVISION_ID', '--region', 'us-central-1']
 
-images: 
+images:
 - 'gcr.io/$PROJECT_ID/hello-world-go'
