@@ -6,3 +6,5 @@ functions:
     lang: golang-http
     handler: ./hello-world
     image: hello-world
+    environment:
+      test: "test"
